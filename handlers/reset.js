@@ -15,6 +15,8 @@ function resetHandler() {
   listContainer.innerHTML = '';
   listContainer.appendChild(currentListComponent);
 
+  document.getElementById('input').value=' ';
+
   // log interaction: handler name, new state
   log.push({
     handler: 'reset',
