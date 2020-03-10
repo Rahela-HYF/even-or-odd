@@ -75,3 +75,4 @@ const array5 = ['...', '...', '...', '...', '...', '...', '...', '...', '...', '
 const category5 = 'loooong list';
 const component5 = renderList(array5, category5);
 testRenderList(component5, array5, category5);
+//render done
