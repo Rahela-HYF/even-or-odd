@@ -10,6 +10,7 @@ function oddsHandler() {
   const listContainer = document.getElementById('selected');
    listContainer.innerHTML = '';
     listContainer.appendChild(currentListComponent);
+    
 
   // log user interaction: handler name, user input, new state
   log.push({
