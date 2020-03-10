@@ -1,6 +1,23 @@
 debugger;
 
-const renderList = () => { };
+const renderList = () => { 
+  const divElement = document.createElement('Div');
+   divElement.id = strings.displayed;
+
+  const h4Element = document.createElement('h4');
+  h4Element.innerHTML=strings.displayed;
+  divElement.appendChild(h4Element);
+  const ulElement = document.createElement('ul');
+  divElement.appendChild(ulElement);
+  for(let i = 0; i < strings[strings.displayed].length; i++){
+    const list =document.createElement('li');
+    list.innerHTML = strings[strings.displayed];
+    ulElement.appendChild(list);
+
+  }
+  return divElement;
+
+};
 
 
 console.log('-- testing renderList component --\n');
@@ -58,3 +75,4 @@ const array5 = ['...', '...', '...', '...', '...', '...', '...', '...', '...', '
 const category5 = 'loooong list';
 const component5 = renderList(array5, category5);
 testRenderList(component5, array5, category5);
+//render done
